@@ -10,8 +10,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV GOLANG_VERSION 1.7.3
-ENV GOLANG_DOWNLOAD_URL https://golang.org/dl/go$GOLANG_VERSION.linux-amd64.tar.gz
-ENV GOLANG_DOWNLOAD_SHA256 508028aac0654e993564b6e2014bf2d4a9751e3b286661b0b0040046cf18028e
 
 RUN tar -C /usr/local -xzf go1.7.3.linux-arm64.tar.gz \
 	&& rm golang.tar.gz
