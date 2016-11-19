@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie-scm
+FROM stcm/arm64-buildpack-deps:jessie-scm
 
 # gcc for cgo
 RUN apt-get update && apt-get install -y --no-install-recommends \
